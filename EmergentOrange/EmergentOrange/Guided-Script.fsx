@@ -141,8 +141,13 @@ let weatherIn (cityName:string) =
 // create a free account for this.
 
 // Flickr API key
-let apiKey = "YOUR_FLICKR_API_KEY_GOES_HERE"
+let apiKey = "99bc6e017593e1d5f41f6e0d09cb7286"
 
+// Utility function: finds the URL of a Flickr picture
+let flickrPhotoUrl (farm,server,photoID:int64,secret) =
+    sprintf "https://farm%i.staticflickr.com/%i/%i_%s.jpg" farm server photoID secret   
+
+let example = flickrPhotoUrl (8,7652,16882873966L,"06bebe6c57")    
 
 // YOUR CODE GOES HERE
 
@@ -151,12 +156,6 @@ let apiKey = "YOUR_FLICKR_API_KEY_GOES_HERE"
 
 let findPictures (searchTerm:string) =
     printfn "Implement me now!"
-
-// TODO: write a function that extracts out from 
-// Flickr data an actual image url, so that we can
-// download it:
-
-
 
 
 (*

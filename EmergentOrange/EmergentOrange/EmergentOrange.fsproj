@@ -49,10 +49,10 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <None Include="Script.fsx" />
     <Content Include="app.config" />
     <None Include="Guided-Script.fsx" />
     <Content Include="packages.config" />
+    <None Include="Solution.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Data">
